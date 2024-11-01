@@ -25,12 +25,12 @@ You may also see any lint errors in the console.
   CSS: Styling and responsive design.\
   React Router: For routing between components.\
   Axios: To fetch data from external APIs.\
-  JSONPlaceholder API: Provides mock data for user details.\
+  JSONPlaceholder API: Provides mock data for user details.
 
 ### File Organization
-  The primary folders and files in this project include:\
+  The primary folders and files in this project include:
 
   src/components: Contains the main components, such as the Navbar, Sidebar, and UserTable.\
   src/pages: Houses the main pages, each corresponding to a major feature of the dashboard (Profile, Users, Settings).\
   App.js: Defines the main application structure and routing.\
-  App.css: Contains global CSS rules for layout and styling.\
+  App.css: Contains global CSS rules for layout and styling.
