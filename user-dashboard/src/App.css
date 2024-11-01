@@ -1,0 +1,309 @@
+/* Global Reset and Styling */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9fafb;
+  color: #333;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* App Layout */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #4a90e2;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Container for Sidebar and Main Content */
+.container {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  overflow-y: auto;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  width: 220px;
+  background-color: #333;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin: 1rem 0;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  display: block;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+.sidebar ul li a:hover {
+  background-color: #4a90e2;
+}
+
+/* Main Content Area */
+main {
+  flex: 1;
+  padding: 2rem;
+  background-color: #f9fafb;
+  overflow-y: auto;
+}
+
+/* Dashboard Table Styling */
+.dashboard {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard h2 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.dashboard input[type="text"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: left;
+}
+
+th {
+  background-color: #f1f5f9;
+  font-weight: bold;
+}
+
+td {
+  background-color: white;
+}
+
+/* Profile Page Styling */
+.profile {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile h2 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.profile form label {
+  display: block;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.profile form input[type="text"],
+.profile form input[type="email"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.profile form button {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s ease;
+}
+
+.profile form button:hover {
+  background-color: #357ab8;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  /* Navbar for Small Screens */
+  .navbar {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+
+  /* Sidebar and Main Content */
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 1rem;
+    position: relative;
+    border-bottom: 1px solid #ddd;
+  }
+
+  /* Adjust Main Content Padding */
+  main {
+    padding: 1.5rem;
+  }
+
+  /* Table Font Sizes */
+  th, td {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard input[type="text"] {
+    font-size: 0.9rem;
+  }
+
+  /* Profile Form Adjustments */
+  .profile form label {
+    font-size: 0.9rem;
+  }
+
+  .profile form input[type="text"],
+  .profile form input[type="email"] {
+    font-size: 0.9rem;
+  }
+
+  .profile form button {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
+
+/* Style the table for better readability */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+table th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+/* Style the search input */
+input[type="text"] {
+  padding: 8px;
+  margin-bottom: 1rem;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* General Button Styling */
+button {
+  padding: 6px 12px;
+  margin: 0 4px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+/* Edit Button */
+button.edit-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+button.edit-btn:hover {
+  background-color: #45a049;
+}
+
+/* Save Button */
+button.save-btn {
+  background-color: #008CBA;
+  color: white;
+}
+
+button.save-btn:hover {
+  background-color: #007bb5;
+}
+
+/* Cancel Button */
+button.cancel-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+button.cancel-btn:hover {
+  background-color: #da190b;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  table {
+    font-size: 0.9rem;
+  }
+
+  button {
+    padding: 5px 10px;
+    font-size: 0.8rem;
+  }
+}
