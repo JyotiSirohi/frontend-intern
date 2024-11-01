@@ -1,8 +1,8 @@
 ### User Dashboard Overview 
 ### Usage
-  Dashboard: Navigate to different sections (Profile, Users, Settings) using the sidebar.\
+  Dashboard: Navigate to different sections (Profile, Users, Settings(to be updated)) using the sidebar.\
   Profile Section: Update profile details such as name and email.\
-  User List: View and search a list of users fetched from an API, with an option to edit each user's details.\
+  User List: View and search a list of users fetched from an API, with an option to edit each user's details.
 
 ### Technologies Used
   React: Frontend library for building user interfaces.\
