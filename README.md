@@ -1,72 +1,40 @@
-# frontend-intern Assignment
 
-# Getting Started with Create React App
+Project Structure
+The project is organized in a component-based architecture with a focus on separation of concerns. Below is an overview of the directory structure:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+react-user-dashboard/
+├── public/
+│   ├── index.html
+│   └── ...
+├── src/
+│   ├── components/           # Reusable UI components
+│   │   ├── Navbar.js         # Top navigation bar
+│   │   ├── Sidebar.js        # Sidebar for navigation links
+│   │   └── UserTable.js      # Table to display user data with edit option
+│   ├── pages/                # Individual pages for each section
+│   │   ├── Dashboard.js      # Main dashboard view
+│   │   ├── Profile.js        # User profile view and edit
+│   │   └── Settings.js       # Settings page
+│   ├── App.js                # Main application component
+│   ├── App.css               # Global styles
+│   ├── index.js              # Entry point for React app
+│   └── index.css             # Base styles
+└── package.json              # Project metadata and dependencies
+Usage
+Dashboard: Navigate to different sections (Profile, Users, Settings) using the sidebar.
+Profile Section: Update profile details such as name and email.
+User List: View and search a list of users fetched from an API, with an option to edit each user's details.
+Technologies Used
+React: Frontend library for building user interfaces.
+JavaScript: For application logic and interactivity.
+CSS: Styling and responsive design.
+React Router: For routing between components.
+Axios: To fetch data from external APIs.
+JSONPlaceholder API: Provides mock data for user details.
+File Organization
+The primary folders and files in this project include:
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+src/components: Contains the main components, such as the Navbar, Sidebar, and UserTable.
+src/pages: Houses the main pages, each corresponding to a major feature of the dashboard (Profile, Users, Settings).
+App.js: Defines the main application structure and routing.
+App.css: Contains global CSS rules for layout and styling.
